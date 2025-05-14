@@ -1,232 +1,28 @@
+
 <!DOCTYPE html>
-<html lang="tr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dostum Coin</title>
-    <link
-      rel="shortcut icon"
-      href="https://discord.com/assets/63c0e0ad98a0a834.svg"
-      type="image/x-icon"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  </head>
+<html lang="en">
 
-  <body>
-    <!-- navbar Başlangıç -->
-    <header>
-      <h1 class="logo">Dostum Coin</h1>
-      <a href="https://discord.gg/dostum" class="btn-area">Destek Sunucusu</a>
-    </header>
-    <!-- navbar Bitiş -->
-    <!-- home Başlangıç -->
-    <div class="wrapper">
-      <div class="home" id="home">
-        <div class="home-text">
-          <h1 id="botname">Dostum Coin</h1>
-          <h3 style="margin-left: 0">Diğer Botlardan Farkımızmı Ne?</h3>
-          <p class="bot-description">
-            Dostum Coin Sizler için özenle ve düzenli bir şekilde yapıldı.
-            Güzel bir ekonomi ve oyunlarla sunucunuza renk katmak için burda,
-            sunucunuz için harika bir ekonomi botu. Denemek için sabıtsızlanıyorsun öyle
-            değil mi? Öyleyse ne bekliyorsun HEMEN DAVET ET!!
-          </p>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MZR Development</title>
+    <link rel="icon" href="./public/favicon.ico" />
+    <link rel="stylesheet" href="./styles/style.css" />
+</head>
 
-          <a
-            href="https://discord.com/oauth2/authorize?client_id=1371502328514871376&scope=bot&permissions=8"
-            class="btn-area"
-            >DAVET ET</a
-          >
-        </div>
-        <div class="home-img">
-          <img
-            src="https://cdn.discordapp.com/attachments/1367942613155582003/1371979230740742144/a-detailed-digital-illustration-of-an-an_k0RhdvyDRSyuC03MIBIXpA_FQf4KOQfQSegGR4nirFSHw.jpeg?ex=68251aba&is=6823c93a&hm=cc732d7b745e842cad214a6b3046183b48291c7401b5fac90d84d9650fa3890e&"
-            alt=""
-          />
-        </div>
-      </div>
-    </div>
-    <!-- home Bitiş -->
-    <!-- Temelden komutlar -->
-    <div class="wrapper reveal">
-      <div class="title">
-        <div class="th1">
-          <h1>Tüm Komutlarım</h1>
-        </div>
-        <center>
-          <div class="thr">
-            <hr />
-          </div>
-        </center>
-      </div>
-      <!-- Komutlar Katagorisi -->
-      <nav>
-        <div class="categorys">
-          <span class="category active" data-name="all">Hepsi</span>
-          <span class="category" data-name="moderator">Oyun</span>
-          <span class="category" data-name="info">Meslek</span>
-          <span class="category" data-name="premium">Ekonomi</span>
-          <span class="category" data-name="diger">Diğer</span>
-        </div>
-      </nav>
-      <!-- Buradan Aşağısı Komutlar -->
-      <div class="commands">
-        <!-- Komut Başlangıç -->
-        <div class="command" data-name="moderator">
-          <h2>Coin Flip</h2>
-          <span>
-            <div class="cmdinfo">
-              <p>Komut: /cf</p>
-            </div>
-            <div class="cmdali">
-              <p>Komut Bilgi: Yazı Tura oynarsınız.</p>
-            </div>
-          </span>
-        </div>
-        <!-- Komut Bitiş -->
-        <!-- Komut Başlangıç -->
-        <div class="command" data-name="moderator">
-          <h2>Slot</h2>
-          <span>
-            <div class="cmdinfo">
-              <p>Komut: /slot</p>
-            </div>
-            <div class="cmdali">
-              <p>Komut Bilgi: Slot oyunu oynarsınız.</p>
-            </div>
-          </span>
-        </div>
-        <!-- Komut Bitiş -->
-        <!-- Komut Başlangıç -->
-        <div class="command" data-name="info">
-          <h2>Günlük Bonus</h2>
-          <span>
-            <div class="cmdinfo">
-              <p>Komut: /günlük</p>
-            </div>
-            <div class="cmdali">
-              <p>Komut Bilgi: Günlük bonusunuzu alırsınız.</p>
-            </div>
-          </span>
-        </div>
-        <!-- Komut Bitiş -->
-        <!-- Komut Başlangıç -->
-        <div class="command" data-name="info">
-          <h2>Saatlik İş</h2>
-          <span>
-            <div class="cmdinfo">
-              <p>Komut: /çalış</p>
-            </div>
-            <div class="cmdali">
-              <p>Komut Bilgi: Bir saatte bir çalışarak para kazanırsınız.</p>
-            </div>
-          </span>
-        </div>
-        <!-- Komut Bitiş -->
-        <!-- Komut Başlangıç -->
-        <div class="command" data-name="info">
-          <h2>Dilencilik</h2>
-          <span>
-            <div class="cmdinfo">
-              <p>Komut: /dilen</p>
-            </div>
-            <div class="cmdali">
-              <p>Komut Bilgi: Dilenerek para kazanırsınız.</p>
-            </div>
-          </span>
-        </div>
-        <!-- Komut Bitiş -->
-        <!-- Komut Başlangıç -->
-        <div class="command" data-name="info">
-          <h2>Madencilik</h2>
-          <span>
-            <div class="cmdinfo">
-              <p>Komut: /kaz</p>
-            </div>
-            <div class="cmdali">
-              <p>Komut Bilgi: Kazı yaparak para kazanırsınız.</p>
-            </div>
-          </span>
-        </div>
-        <!-- Komut Bitiş -->
-        <!-- Komut Başlangıç -->
-        <div class="command" data-name="premium">
-          <h2>Cüzdan</h2>
-          <span>
-            <div class="cmdinfo">
-              <p>Komut: /bakiye</p>
-            </div>
-            <div class="cmdali">
-              <p>Komut Bilgi: Kendinizin veya başkasının bakiyesine bakarsınız.</p>
-            </div>
-          </span>
-        </div>
-        <!-- Komut Bitiş -->
-        <!-- Komut Başlangıç -->
-        <div class="command" data-name="premium">
-          <h2>Market</h2>
-          <span>
-            <div class="cmdinfo">
-              <p>Komut: /market</p>
-            </div>
-            <div class="cmdali">
-              <p>Komut Bilgi: Marketten kazma satın alırsınız.</p>
-            </div>
-          </span>
-        </div>
-        <!-- Komut Bitiş -->
-        <div class="command" data-name="premium">
-          <h2>Envanter</h2>
-          <span>
-            <div class="cmdinfo">
-              <p>Komut: /envanter</p>
-            </div>
-            <div class="cmdali">
-              <p>Komut Bilgi: Kendinizin veya başkasının envanterine bakarsınız.</p>
-            </div>
-          </span>
-        </div>
-        <!-- Komut Bitiş -->
-        <!-- Komut Bitiş -->
-        <div class="command" data-name="premium">
-          <h2>Bilgi</h2>
-          <span>
-            <div class="cmdinfo">
-              <p>Komut: /bilgi</p>
-            </div>
-            <div class="cmdali">
-              <p>Komut Bilgi: Kendinizin veya başkasının bilgilerine bakarsınız.</p>
-            </div>
-          </span>
-        </div>
-        <!-- Komut Bitiş -->
-        <!-- Komut Başlangıç -->
-        <div class="command" data-name="diger">
-          <h2>Diğer</h2>
-          <span>
-            <div class="cmdinfo">
-              <p>Komut: /yardım</p>
-            </div>
-            <div class="cmdali">
-              <p>Komut Bilgi: Diğer komutlara bakarsınız.</p>
-            </div>
-          </span>
-        </div>
-        <!-- Komut Bitiş -->
-      </div>
-    </div>
-    <!-- Temelden komutlar bitiş -->
-    <script src="mzr.js"></script>
-    <script src="commands.js"></script>
-    <script src="https://code.iconify.design/1/1.0.4/iconify.min.js"></script>
-    <link
-      href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-  </body>
-</html>
+<body>
+    <center>
+        <h1>Index H1 Title</h1>
+        <p>Merhabalar, index dosyamıza hoş geldiniz.</p>
+    </center>
+
+    <script src="./scripts/script.js"></script>
+    <script>
+        window.va = window.va || function () {
+            (window.vaq = window.vaq || []).push(arguments);
+        };
+    </script>
+    <script src="/_vercel/insights/script.js"></script>
+</body>
+
+</html>https://gilded-dour-antimony.glitch.me
